@@ -5,5 +5,5 @@
 
 # Progress
 
-- Character startinf direction
+- Character startin direction
 - timeframe 33:06
