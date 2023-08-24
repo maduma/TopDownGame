@@ -5,5 +5,5 @@
 
 # Progress
 
-- Character startin direction
-- timeframe 33:06
+- Character is moving with animation
+- timeframe 1:13:33
