@@ -7,3 +7,9 @@
 
 - Character is moving with animation
 - timeframe 1:13:33
+
+# Helper
+
+- edit.bat : Start Godot editor
+- run.bat  : Run Game from source
+ 

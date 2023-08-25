@@ -22,6 +22,10 @@ window/size/viewport_height=600
 window/stretch/mode="canvas_items"
 window/stretch/scale=3.0
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 right={
