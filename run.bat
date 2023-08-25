@@ -10,6 +10,10 @@ if ERRORLEVEL 1 (
     EXIT /B
 )
 
-:: Launch the game
+:: Reimport assets
 CD Tuto
+RMDIR /S /Q .godot
+Godot -e --headless --quit 
+
+:: Launch the game
 Godot
