@@ -1,11 +1,12 @@
-:: Run godot engine on source
+:: Open Godot editor on the project
 
 ECHO OFF
 
-:: Check Godot.exe availaible
+:: Check Godot.exe is available
 where Godot
 if ERRORLEVEL 1 (
     ECHO Godot application is missing. Ensure it is installed and placed in your PATH.
+    PAUSE
     EXIT /B
 )
 
