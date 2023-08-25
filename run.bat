@@ -3,9 +3,9 @@
 ECHO OFF
 
 :: Check Godot.exe is available
-where Godot
+where godot
 if ERRORLEVEL 1 (
-    ECHO Godot application is missing. Ensure it is installed and placed in your PATH.
+    ECHO "godot" application is missing. Ensure it is installed and placed in your PATH.
     PAUSE
     EXIT /B
 )
@@ -13,7 +13,7 @@ if ERRORLEVEL 1 (
 :: Reimport assets
 CD Tuto
 RMDIR /S /Q .godot
-Godot -e --headless --quit 
+godot -e --headless --quit 
 
 :: Launch the game
-Godot
+godot
