@@ -12,4 +12,4 @@ if ERRORLEVEL 1 (
 
 :: Launch the editor
 CD Tuto
-godot -e
+godot --rendering-driver opengl3 -e

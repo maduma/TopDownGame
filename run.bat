@@ -16,4 +16,4 @@ RMDIR /S /Q .godot
 godot -e --headless --quit 
 
 :: Launch the game
-godot
+godot --rendering-driver opengl3
