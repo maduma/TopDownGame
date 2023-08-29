@@ -1,0 +1,1 @@
+# Le joueur doit faire des choix moraux tout au long du jeu. Ces choix peuvent avoir un impact sur l'histoire du jeu et sur le destin du monde

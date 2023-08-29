@@ -1,0 +1,1 @@
+# Le monde doit être dangereux et hostile. Le joueur doit être constamment sur ses gardes pour éviter les ennemis et les autres dangers.

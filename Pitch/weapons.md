@@ -1,0 +1,1 @@
+# Une variété d'armes et de gadgets: Le joueur doit pouvoir utiliser une variété d'armes et de gadgets pour combattre les ennemis. Cela ajoute de la variété au gameplay et permet au joueur de trouver son propre style de jeu.
