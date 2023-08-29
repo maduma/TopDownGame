@@ -14,7 +14,8 @@ Le joueur doit faire des choix moraux tout au long du jeu. Ces choix peuvent avo
 - Un gameplay fluide et amusant: Le gameplay du jeu doit être fluide et amusant. Le joueur doit pouvoir se déplacer facilement dans le monde et combattre les ennemis de manière efficace.
 
 - Un monde dangereux et hostile: Le monde doit être dangereux et hostile. Le joueur doit être constamment sur ses gardes pour éviter les ennemis et les autres dangers.
-Une variété d'armes et de gadgets: Le joueur doit pouvoir utiliser une variété d'armes et de gadgets pour combattre les ennemis. Cela ajoute de la variété au gameplay et permet au joueur de trouver son propre style de jeu.
+
+- Une variété d'armes et de gadgets: Le joueur doit pouvoir utiliser une variété d'armes et de gadgets pour combattre les ennemis. Cela ajoute de la variété au gameplay et permet au joueur de trouver son propre style de jeu.
 
 - Des choix moraux: Le joueur doit faire des choix moraux tout au long du jeu. Ces choix peuvent avoir un impact sur l'histoire du jeu et sur le destin du monde.
 
