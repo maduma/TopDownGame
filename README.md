@@ -6,7 +6,8 @@
 # Progress
 
 - Character is moving with animation
-- timeframe 1:13:33
+- Tilemap and simple collision
+- timeframe 53:44
 
 # Helper
 
