@@ -11,7 +11,8 @@ Buts
 
 ## Find birth
 
-Une cinematique explique que le joueur doit passer un rite pour passer a l'age adulte. Il doit recuperer un butin dans un place forte de l'empire. 
+Une cinematique explique que le joueur doit passer un rite pour passer a l'age adulte. Il doit recuperer un butin dans un place forte de l'empire.
+On ne peut sortir que la nuit, sous paine de se faire reperer par l'empire
 Le joueur commence par affronter un bos et decouvre parmi le butin une photos de lui et de trois soeurs.
 La tribu lui dit d'aller voir le 'savoir' qui est assiege par l'empire depuis des annees.
 
