@@ -11,6 +11,12 @@ Buts
 
 ## Find birth
 
+Une cinematique explique que le joueur doit passer un rite pour passer a l'age adulte. Il doit recuperer un butin dans un place forte de l'empire. 
+Le joueur commence par affronter un bos et decouvre parmi le butin une photos de lui et de trois soeurs.
+La tribu lui dit d'aller voir le 'savoir' qui est assiege par l'empire depuis des annees.
+
+Le 'savoir' lui explique comment ils ont ete separe et c'est soeur emprisonee par l'empire et qu'il faut biser le charme pour libere les soeur tres puissantes. 
+
 ## Inside the fortress
 
 ## Blast everything
