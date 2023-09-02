@@ -7,3 +7,4 @@ https://images.squarespace-cdn.com/content/v1/551a19f8e4b0e8322a93850a/20b4ed5e-
 Panorama de pleine (ou presque) nuit avec bidonville en avant plan, brume au millieu, Forteresse en arriere plan
 Le monde est plonge dans le noir, car les rebelles detruise tout eclerage pour ne pas se faire reperer
 
+Le jeu se deroule en hiver
