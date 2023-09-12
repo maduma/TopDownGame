@@ -41,21 +41,21 @@ jobs:
 
         - uses: actions/checkout@v2
         - name: Download Godot engine
-          run: curl -o ./godot.zip ${env.GODOT_EXEC_URL} && unzip ./godot.zip
+          run: curl -o ./godot.zip ${{env.GODOT_EXEC_URL}} && unzip ./godot.zip
 
         - name: Download Godot templates
-          run: curl -o ./godot-templates.zip ${env.GODOT_TEMPLATES_URL} && unzip ./godot-templates.zip
+          run: curl -o ./godot-templates.zip ${{env.GODOT_TEMPLATES_URL}} && unzip ./godot-templates.zip
 
         - name: Setup templates
-          run: mkdir -p "${env.GODOT_TEMPLATES_DIR}" && mv templates "${env.GODOT_TEMPLATES_DIR}/${env.GODOT_VERSION}.stable"
+          run: mkdir -p "${{env.GODOT_TEMPLATES_DIR}}" && mv templates "${{env.GODOT_TEMPLATES_DIR}}/${{env.GODOT_VERSION}}.stable"
         
         - name: Prepare build directory
           run: mkdir build/
 
         - name: Decode export presets
-          run: echo ${env.GODOT_EXPORT_PRESETS} | base64 --decode > ./export_presets.cfg
+          run: echo ${{env.GODOT_EXPORT_PRESETS}} | base64 --decode > ./export_presets.cfg
 
         - name: Export project
-          run: ${env.GODOT_EXEC} --path . --no-window --export "${env.EXPORT_TYPE}" build/${env.ARTIFACT}
+          run: ${{env.GODOT_EXEC}} --path . --no-window --export "${{env.EXPORT_TYPE}}" build/${{env.ARTIFACT}}
         
         # artifacts: build/*.zip
