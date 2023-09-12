@@ -47,3 +47,8 @@ jobs:
         # - artifacts:
         #     run:
         #         working-directory: build/*.zip
+        - name: Artifact
+          uses: actions/upload-artifact@v3
+          with:
+            name: artifact
+            path: build/*.zip
