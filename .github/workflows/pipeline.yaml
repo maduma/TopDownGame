@@ -25,20 +25,6 @@ jobs:
 
 
     steps:
-    #   - uses: actions/checkout@v2
-    #   - name: Build
-    #     id: build
-    #     uses: manleydev/build-godot-action@v1.4.1
-    #     with:
-    #       name: example
-    #       preset: ${{ matrix.platform }}
-    #       debugMode: "true"
-    #   - name: Upload Artifact
-    #     uses: actions/upload-artifact@v2
-    #     with:
-    #       name: Client - ${{ matrix.platform }}
-    #       path: ${{ github.workspace }}/${{ steps.build.outputs.build }}
-
         - uses: actions/checkout@v2
         - name: Download Godot engine
           run: curl -o ./godot.zip ${{env.GODOT_EXEC_URL}} && unzip ./godot.zip
@@ -47,7 +33,7 @@ jobs:
           run: curl -o ./godot-templates.zip ${{env.GODOT_TEMPLATES_URL}} && unzip ./godot-templates.zip
 
         - name: Setup templates
-          run: mkdir -p ${{env.GODOT_TEMPLATES_DIR}} && mv templates ${{env.GODOT_TEMPLATES_DIR}}/${{env.GODOT_VERSION}}.stable
+          run: cd mkdir -p ${{env.GODOT_TEMPLATES_DIR}} && mv templates ${{env.GODOT_TEMPLATES_DIR}}/${{env.GODOT_VERSION}}.stable
         
         - name: Prepare build directory
           run: mkdir build/
@@ -58,4 +44,6 @@ jobs:
         - name: Export project
           run: ${{env.GODOT_EXEC}} --path . --no-window --export ${{env.EXPORT_TYPE}} build/${{env.ARTIFACT}}
         
-        # artifacts: build/*.zip
+        # - artifacts:
+        #     run:
+        #         working-directory: build/*.zip
