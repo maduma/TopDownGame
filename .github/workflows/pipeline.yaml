@@ -33,7 +33,7 @@ jobs:
           run: curl -o ./godot-templates.zip ${{env.GODOT_TEMPLATES_URL}} && unzip ./godot-templates.zip
 
         - name: Setup templates
-          run: cd mkdir -p ${{env.GODOT_TEMPLATES_DIR}} && mv templates ${{env.GODOT_TEMPLATES_DIR}}/${{env.GODOT_VERSION}}.stable
+          run: mkdir -p ${{env.GODOT_TEMPLATES_DIR}} && mv templates ${{env.GODOT_TEMPLATES_DIR}}/${{env.GODOT_VERSION}}.stable
         
         - name: Prepare build directory
           run: mkdir build/
