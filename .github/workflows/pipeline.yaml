@@ -42,7 +42,7 @@ jobs:
           run: echo ${{env.GODOT_EXPORT_PRESETS}} | base64 --decode > ./export_presets.cfg
 
         - name: Export project
-          run: ./${{env.GODOT_EXEC}} --path . --no-window --export ${{env.EXPORT_TYPE}} /build/${{env.ARTIFACT}}
+          run: sudo ./${{env.GODOT_EXEC}} --path . --no-window --export ${{env.EXPORT_TYPE}} /build/${{env.ARTIFACT}}
         
         # - artifacts:
         #     run:
