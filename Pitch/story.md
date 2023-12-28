@@ -9,6 +9,11 @@ Buts
 - Le deuxieme est de s'introduire dans la forteresse pour trouver les soeurs.
 - La fin de l'aventure ce fait en controllant less 4 hero pour reverser le pourvoir.
 
+## Childhood
+
+La premiere partie du jeu met en scene le jeune rebele qui est confronte a une attaque du ville et une fuite vers un village lointin (tuto movement, escive), mise en place du 'monde'
+
+
 ## Find birth
 
 Une cinematique explique que le joueur doit passer un rite pour passer a l'age adulte. Il doit recuperer un butin dans un place forte de l'empire.
