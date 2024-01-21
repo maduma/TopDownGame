@@ -24,8 +24,14 @@ Guerre pendant le journee pour les artefacts (ont ne peut pas les deplace)
 Tableaux
 ========
 
+Intro.
+
+La fuite du village 14 ans plutot. Le boss du village contre le garde pour sauver les enfants.
+
+Premiere partie
+
 1. La fuite de hugo a 16 ans (follow the gards, slaw, walk, running, moving tuto)
     les gardes raconte l'histoire: attaque 
 2. Hugo va nourir le groupe dans la foret (combat tuto)
 3. Preparation Anniversaire (connaissance d'un personnage secondaire, histoire)
-
+4. Prise de l'artefact
