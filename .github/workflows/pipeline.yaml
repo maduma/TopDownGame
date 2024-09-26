@@ -1,0 +1,54 @@
+name: CICD pipeline
+
+on:
+  push:
+    branches: dev
+  pull_request:
+    branches: dev
+
+env:
+    groups: godot
+    GODOT_VERSION: 3.4.4
+    GODOT_EXEC_URL: https://downloads.tuxfamily.org/godotengine/${GODOT_VERSION}/Godot_v${GODOT_VERSION}-stable_osx.universal.zip
+    GODOT_TEMPLATES_URL: https://downloads.tuxfamily.org/godotengine/${GODOT_VERSION}/Godot_v${GODOT_VERSION}-stable_export_templates.tpz
+    GODOT_TEMPLATES_DIR: /Users/builder/Library/Application\ Support/Godot/templates
+    GODOT_EXEC: Godot.app/Contents/MacOS/Godot
+    EXPORT_TYPE: mac
+    ARTIFACT: app.zip
+
+jobs:
+  Godot:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        platform: [linux, windows]
+
+
+    steps:
+        - uses: actions/checkout@v2
+        - name: Download Godot engine
+          run: curl -o ./godot.zip ${{env.GODOT_EXEC_URL}} && unzip ./godot.zip
+
+        - name: Download Godot templates
+          run: curl -o ./godot-templates.zip ${{env.GODOT_TEMPLATES_URL}} && unzip ./godot-templates.zip
+
+        - name: Setup templates
+          run: sudo mkdir -p ${{env.GODOT_TEMPLATES_DIR}} && sudo mv templates ${{env.GODOT_TEMPLATES_DIR}}/${{env.GODOT_VERSION}}.stable
+        
+        - name: Prepare build directory
+          run: mkdir build/
+
+        - name: Decode export presets
+          run: echo ${{env.GODOT_EXPORT_PRESETS}} | base64 --decode > ./export_presets.cfg
+
+        - name: Export project
+          run: sudo ./${{env.GODOT_EXEC}} --path . --no-window --export ${{env.EXPORT_TYPE}} /build/${{env.ARTIFACT}}
+        
+        # - artifacts:
+        #     run:
+        #         working-directory: build/*.zip
+        - name: Artifact
+          uses: actions/upload-artifact@v3
+          with:
+            name: artifact
+            path: build/*.zip
