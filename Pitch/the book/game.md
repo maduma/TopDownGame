@@ -16,7 +16,7 @@ Houra Hugo a bien grandi, il a eu 20 ans. Demain il va recupere un artefact mine
 
 Explications gameplay
 ---------------------
-
+Le village est invisible de l'enemi car il emet peu de co2 (seulement la nuit) et est cache dans la foret.
 La nuit car la demande d'energie est trop grande pour tout elaire et contrer les brouilleurs adverse peut energivore. La consomation d'energie faibles permet de rester
 Protection des places fortes pendant la journee
 Guerre pendant le journee pour les artefacts (ont ne peut pas les deplace)
